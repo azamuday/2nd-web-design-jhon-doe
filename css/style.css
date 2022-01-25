@@ -1,0 +1,739 @@
+
+/***** Main Css *****/
+
+
+/***** Table oF Content *****
+
+* banner and navbar
+* about me
+* My Skill
+* Service
+* project
+* portfolio
+* testmonial
+* contact form 
+* footer
+
+***** End *****/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/***** Banner and Navbar *****/
+
+/** banner image **/
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/banner.jpg);
+    width: 100%;
+    height: 100vh;   
+}
+/** navbar **/
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: #000;
+    justify-content: space-around;
+    z-index: 10;
+}
+/** logo **/
+
+.logo{
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+/** nav **/
+.navs{
+    flex-basis: 50%;
+}
+.navs-lists{
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    list-style: none;
+}
+.item-nav{
+    margin: 0 8px;
+}
+.navs-links{
+    padding: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+.navs-links:hover{
+    background-color: #5f27cd;
+    color:  #000;
+}
+a{
+    text-decoration: none;
+}
+/** Social Icon **/
+
+.social-icon{
+    flex-basis:20%;
+    color:#fff;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 9px;
+    cursor: pointer;
+}
+.social-icon i{
+    transition: 0.8s;
+}
+.social-icon i:hover{
+    color:#5f27cd;
+}
+.header-close{
+    display: none;
+}
+.header-toggle{
+    display: none;
+}
+/** text box **/
+
+.text-box{
+    padding-top: 250px;
+    padding-left:150px;
+}
+.text-box h2{
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+/** button **/
+.btn{
+    padding-top: 15px;
+}
+.btn-1{
+    padding: 15px 25px;
+    color: #000;
+    background-color:#5f27cd;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px sloid #5f27cd;
+}
+.btn-1:hover{
+    color: #fff;
+    background-color:#000;
+}
+.btn-2{
+    padding: 15px 25px;
+    margin-left: 5px;
+    color: #fff;
+    background-color:#000;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px sloid #000;
+}
+.btn-2:hover{
+    color: #000;
+    background-color:#fff;
+}
+
+/***** Banner and Navbar respobsive ( mobile ) *****/
+
+@media screen and (max-width: 576px){
+
+
+    .banner{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/banner.jpg);
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;  
+    }
+    .navigation{
+        width: 100%;
+        display: flex;
+        background-color: #000;
+        justify-content: space-around;
+    } 
+    .logo{
+        flex-basis: 20%;
+        position: left;
+
+    }
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+    .header-toggle{
+        display: inline;
+        color:#fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .header-close{
+        display: block;
+        color:#000;
+        font-size: 25px;
+        position: absolute;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .social-icon{
+        display: none;
+    }
+    .navs{
+        flex-basis: 70%;
+        position: fixed;
+        top: 0;
+        background-color: #5f27cd;
+        color: #000;
+        width: 80%;
+        right: -100%;
+        height: 100vh;
+        padding: 24px;
+        z-index: 100;
+        transition: 0.5s;
+        border-radius: 0 0 0 50%;
+    }
+    .navs-lists{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-nav{
+        margin: 25px 0;
+    }
+    .show{
+        right: 0;
+    }
+    .text-box{
+        padding-top: 250px;
+        text-align: center;
+    }
+    .text-box h2{
+        font-size: 40px;
+        text-align: left;
+        font-weight: bold;
+        color: #fff;
+    }
+    .btn{
+        text-align: center;
+        display: flex;
+
+    }
+    .btn-1{
+        padding: 8px 15px;
+        color: #000;
+        background-color:#5f27cd;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px sloid #5f27cd;
+    }
+    .btn-2{
+        padding: 8px 15px;
+        margin-left: 5px;
+        color: #fff;
+        background-color:#000;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px sloid #000;
+    }
+
+}
+
+
+
+/***** About Me *****/
+
+
+.about{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.about-2{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 80px;
+    text-align: center;
+}
+.about-2 h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.about-2 p{
+    font-size: 18px;
+    padding: 0 100px;
+}
+.about-sec{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+}
+/** text-1 **/
+
+.text-1{
+    flex-basis: 31%;
+}
+.text-1 h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.text-1 p{
+    font-size: 16px;
+    text-align: justify;
+}
+.text-2{
+    flex-basis: 31%;
+}
+.text-3{
+    flex-basis: 31%;
+}
+.text-color{
+    color: #5f27cd;
+    font-weight: bold;
+}
+.text-2-1 h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/***** About Me respobsive ( mobile ) *****/
+
+
+@media screen and (max-width: 576px){
+    .about-sec{
+        display: inline-block;
+        padding-top: 80px;
+        justify-content: space-around;
+    }
+    .about-2 p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+
+
+/***** My skil *****/
+
+
+.skill{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-basis: 48%;
+    padding-top: 30px;
+
+}
+.skill-1{
+    flex-basis: 48%;
+}
+.skill-1-1 h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.skill-1-1 p{
+    font-size: 16px;
+text-align: left;
+}
+.skill-1-2 img{
+    width: 60px;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 3px;
+}
+/** skill image **/
+
+.skill-2{
+    flex-basis: 48%;
+}
+.skill-2 img{
+    width: 100%;
+    height: auto;
+    padding: 25px 0
+}
+
+/***** My Skill  respobsive ( mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .skill{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: inline-block;
+        padding-top: 80px;
+
+    
+    }
+    .skill-1{
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+    .skill-2{
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+    .skill-1-2 img{
+        width: 40px;
+        height: auto;
+        padding-top: 10px;
+        padding-left: 3px;
+    }
+}
+
+
+/***** service *****/
+
+
+.service{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.total-service{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+}
+.head-service{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.head-service h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.head-service p{
+    font-size: 18px;
+    padding: 0 100px;
+}
+/** Service Card **/
+
+.sec-service{
+    display: flex;
+    justify-content: space-between;
+}
+.sec-service-1{
+    flex-basis: 31%;
+    justify-content: space-around;
+    text-align: center;
+}
+.sec-service-1 i{
+    font-size: 40px;
+    color:#5f27cd;
+    padding-bottom: 10px;
+}
+.sec-service-1 h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.sec-service-1 p{
+    font-size: 16px; 
+    text-align: justify; 
+}
+
+/***** Service  respobsive ( mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .head-service p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .sec-service{
+        display: inline-block;
+        justify-content: space-between;
+    }
+}
+
+
+
+/***** project *****/
+
+.project{
+    padding-top: 80px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.pro-1{
+    text-align: center;
+}
+.pro-1 h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.pro-1 p{
+    font-size: 18px;
+    padding: 0 100px;
+}
+
+/***** Project respobsive ( mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .pro-1 p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+
+
+/***** portfolio *****/
+
+
+.portfolio{
+    padding-top: 80px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.port-1{
+    text-align: center;
+}
+.port-1 h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.port-1 p{
+    font-size: 18px;
+    padding: 0 100px;
+}
+/** portfolio card **/
+.port-2{
+    flex-basis: 31%;
+    display: flex;
+}
+.port-3{
+    flex-basis: 31%;
+    display: flex; 
+}
+.port-2-1 img{
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+.port-2-1 p{
+    padding: 0 10px;
+}
+.port-2-2{
+    font-weight: bold;
+}
+
+/***** Portfolio respobsive ( mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .port-1 p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .port-2{
+        display: inline-block;
+    }
+    .port-3{
+        display: inline-block; 
+    }
+}
+
+
+/***** testmonial *****/
+
+
+.testmonial{
+    padding-top: 80px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.test-1{
+    text-align: center;
+}
+.test-1 h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.test-1 p{
+    font-size: 18px;
+    padding: 0 100px;
+}
+/** testmonial Card **/
+.test-2{
+    display: flex;
+    padding-top: 5px;
+    flex-basis: 30%;
+    justify-content: space-around;
+}
+.test-2-1{
+    flex-basis: 30%;
+    justify-content: space-around;
+}
+.text-text{
+    display: flex;
+    padding-top: 8px;
+}
+.test-2-3 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+}
+.test-2-4{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+/***** Testmonial  respobsive ( mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .test-1 p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .test-2{
+        display: inline-block;
+        padding-top: 20px;
+
+    }
+    .test-2-1{
+        padding: 25px 0;
+
+    }
+}
+
+
+
+/***** contact form  *****/
+
+
+.contact{
+    padding-top: 80px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.con-1{
+    text-align: center;
+}
+.con-1 h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.con-1 p{
+    font-size: 18px;
+    padding: 0 100px;
+}
+/** Form **/
+form{
+    width: 70%;
+    margin: auto;
+}
+label{
+    font-style: 20px;
+    font-weight: bold;
+}
+textarea{
+    margin: 15px 0;
+    width:  100%;
+    height: 200px;
+}
+.btn-3{
+    width: 50%;
+    padding: 10px 30px;
+    color: #fff;
+    background-color:#000;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px sloid #000;
+    font-weight: bold;
+}
+.btn-3:hover{
+    color: #000;
+    background-color: #5f27cd;
+}
+
+/***** Testmonial  respobsive ( mobile ) *****/
+
+@media screen and (max-width: 576px){
+    .con-1 p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    form{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+/***** footer *****/
+
+
+.footer{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+/** text **/
+
+.footer-1 h3{
+    font-size: 25px;
+	font-weight: bold;
+    padding: 10px 0;
+}
+/** social icon **/
+
+.footer-2 i{
+    font-size: 25px;
+    padding: 0 2px;
+    color: #5f27cd;
+    cursor: pointer;
+}
+/** copyright text **/
+
+.footer-3{
+	padding: 15px 0;
+	text-align: center;
+}
+.footer-3 i{
+    color: #5f27cd;
+}
+.footer-3 a{
+	text-decoration: none;
+	color:#5f27cd;
+	font-weight: bold;
+}
+
+/***** Testmonial  respobsive ( mobile ) *****/ 
+@media screen and (max-width: 576px){
+    .footer{
+        width: 100%;
+        height: auto;
+        color: #fff;
+        background-color: #000;
+        text-align: center;
+    }
+    .footer-3{
+        width: 90%;
+        margin: auto;
+    }
+ 
+}
+
+/***** End *****/
